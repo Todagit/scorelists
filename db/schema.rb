@@ -10,7 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_30_023943) do
+ActiveRecord::Schema.define(version: 2020_10_02_101255) do
+
+  create_table "scores", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "user_id", null: false
+    t.integer "japanese"
+    t.integer "math1"
+    t.integer "math2"
+    t.integer "worldhistory"
+    t.integer "japanesehistory"
+    t.integer "modernsociety"
+    t.integer "geography"
+    t.integer "chemistry"
+    t.integer "physics"
+    t.integer "english"
+    t.index ["user_id"], name: "index_scores_on_user_id"
+  end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
@@ -26,4 +43,5 @@ ActiveRecord::Schema.define(version: 2020_09_30_023943) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "scores", "users"
 end
