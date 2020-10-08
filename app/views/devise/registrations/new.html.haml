@@ -16,7 +16,7 @@
     = f.label :password
     - if @minimum_password_length
       %em
-        (#{@minimum_password_length} characters minimum)
+        (#{@minimum_password_length} 文字以上入力してください)
     %span.require 必須
     %br/
     = f.password_field :password, autocomplete: "new-password"
@@ -25,5 +25,5 @@
     %br/
     = f.password_field :password_confirmation, autocomplete: "new-password"
   .actions
-    = f.submit "Sign up"
+    = f.submit "新規登録"
 = render "devise/shared/links"
