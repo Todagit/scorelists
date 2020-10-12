@@ -1,0 +1,2 @@
+class StudyScore < ApplicationRecord
+end
