@@ -7,4 +7,5 @@ class User < ApplicationRecord
   validates :nickname, presence: true, uniqueness: true
 
   has_many :scores
+  has_many :study_scores
 end
