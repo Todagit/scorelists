@@ -1,0 +1,2 @@
+class StudyScoreController < ApplicationController
+end
