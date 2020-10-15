@@ -1,0 +1,20 @@
+.header
+  .header__inner
+    .header__inner__tilte
+      ScoreList
+    .header__inner__right
+      -# %ul.list__right
+      -#   - if user_signed_in?
+      -#     %li.list__right__login
+      -#       = link_to "/users/#{current_user.id}" do
+      -#         %span マイページ
+      -#     %li.list__right__new
+      -#       = link_to destroy_user_session_path, method: :delete do
+      -#         %span ログアウト
+      -#   - else
+      -#     %li.list__right__login
+      -#       = link_to new_user_session_path do
+      -#         %span ログイン 
+      -#     %li.list__right__new
+      -#       = link_to new_user_registration_path do
+      -#         %span 新規会員登録
