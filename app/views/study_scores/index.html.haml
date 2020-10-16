@@ -3,8 +3,9 @@
 .top
   %h2
     共通テストのスコアの推移を確認できます
-  .top__new
-    スコアを登録する
-    .top__new__link
-      -# = link_to new_study_score do
-        %span 新しいスコアを登録する
+  - if user_signed_in?  
+    .top__new
+      スコアを登録する
+      .top__new__link
+        = link_to new_study_score_path do
+          %span 新しいスコアを登録する
