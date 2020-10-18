@@ -1,12 +1,14 @@
 .new__studyscore
   %h2
-    共通テストの模試の結果の登録
+    テスト結果の登録
   .new__studyscore__form
     =form_with model: @study_score ,class:"new__studyscore__form__box",local: true do |f|
       .f__field
         = f.label :test_name, "テスト名"
         = f.text_field :test_name, placeholder: "テストの名前を入力してください"
-      
+      .f__field
+        = f.label :test_date, "テストを実施した日付"
+        = = f.date_select :test_date
       .f__field
         = f.label
         = f.number_field
