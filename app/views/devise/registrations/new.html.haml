@@ -22,6 +22,8 @@
     = f.password_field :password, autocomplete: "new-password"
   .field
     = f.label :password_confirmation
+    %p
+      確認のためもう一度入力してください
     %br/
     = f.password_field :password_confirmation, autocomplete: "new-password"
   .actions
