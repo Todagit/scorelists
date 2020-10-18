@@ -4,8 +4,9 @@
   .new__studyscore__form
     =form_with model: @study_score ,class:"new__studyscore__form__box",local: true do |f|
       .f__field
-        = f.label
-        = f.text_field
+        = f.label :test_name, "テスト名"
+        = f.text_field :test_name, placeholder: "テストの名前を入力してください"
+      
       .f__field
         = f.label
         = f.number_field
