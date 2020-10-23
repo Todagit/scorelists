@@ -2,17 +2,17 @@
   box-sizing: border-box;
 }
 
-// .header {
-//   &__inner {
-//     display: flex;
-//     justify-content: space-between;
-//     height: 100px;
-//     &__left {
-//       .title {
-//         color: aqua;
-//       }
+.header {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    &__left {
+      .title {
+        color: aqua;
+      }
       
-//     }
-//   }
+    }
+  }
   
-// }
+}
