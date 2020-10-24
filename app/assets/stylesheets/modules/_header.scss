@@ -10,10 +10,13 @@
     width: 100%;
     background-color: aquamarine;
     &__left {
+      margin-top: 26px;
+      margin-left: 50px;
       .title {
         color: #0099ff;
+        font-size: 32px;
+        font-weight: bold;
       }
-      
     }
   }
   
