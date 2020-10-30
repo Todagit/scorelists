@@ -1,0 +1,50 @@
+.edit__studyscore
+  %h2
+    テスト結果の登録
+  .edit__studyscore__form
+    =form_with model: @study_score ,class:"edit__studyscore__form__box",local: true do |f|
+      .f__field
+        = f.label :test_name, "テスト名"
+        = f.text_field :test_name, placeholder: "テストの名前を入力してください"
+      .f__field
+        = f.label :test_date, "テストを実施した日付"
+        = f.date_select :test_date
+      .f__field
+        = f.label :japanese, "国語"
+        = f.number_field :japanese
+      .f__field
+        = f.label :math1a, "数Ia"
+        = f.number_field :math1a
+      .f__field
+        = f.label :math2b, "数IIb"
+        = f.number_field :math2b
+      .f__field
+        = f.label :worldhistory, "世界史"
+        = f.number_field :worldhistory
+      .f__field
+        = f.label :japanesehistory, "日本史"
+        = f.number_field :japanesehistory
+      .f__field
+        = f.label :modernsociety, "現代社会"
+        = f.number_field :modernsociety
+      .f__field
+        = f.label :geography, "地理"
+        = f.number_field :geography
+      .f__field
+        = f.label :chemistry, "化学"
+        = f.number_field :chemistry
+      .f__field
+        = f.label :physics, "物理"
+        = f.number_field :physics
+      .f__field
+        = f.label :english_l, "英語(リスニング)"
+        = f.number_field :english_l
+      .f__field
+        = f.label :english_r, "英語(リーディング)"
+        = f.number_field :english_r 
+      .f__submit
+        = f.submit "登録する"
+  .back
+    = link_to root_path do
+      トップページにもどる
+      
