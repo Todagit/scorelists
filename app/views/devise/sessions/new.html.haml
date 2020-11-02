@@ -5,7 +5,7 @@
     %br/
     = f.email_field :email, autofocus: true, autocomplete: "email"
   .field
-    = f.label :password　"パスワード"
+    = f.label :password
     %br/
     = f.password_field :password, autocomplete: "current-password"
   - if devise_mapping.rememberable?
@@ -15,3 +15,6 @@
   .actions
     = f.submit "ログイン"
 = render "devise/shared/links"
+.back
+  = link_to root_path do
+    トップページにもどる
