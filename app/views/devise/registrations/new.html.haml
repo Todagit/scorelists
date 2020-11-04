@@ -1,35 +1,38 @@
 .sign-up
-  %h1 SCORELISTへようこそ
-  %h2 新規登録
-  = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
-    = render "devise/shared/error_messages", resource: resource
-    .field
-      = f.label :nickname, "ニックネーム"
-      %span.require 必須
-      %br/
-      = f.text_field :nickname
-    .field
-      = f.label :email
-      %span.require 必須
-      %br/
-      = f.email_field :email, autofocus: true, autocomplete: "email"
-    .field
-      = f.label :password
-      - if @minimum_password_length
-        %em
-          (#{@minimum_password_length} 文字以上入力してください)
-      %span.require 必須
-      %br/
-      = f.password_field :password, autocomplete: "new-password"
-    .field
-      = f.label :password_confirmation
-      %p
-        確認のためもう一度入力してください
-      %br/
-      = f.password_field :password_confirmation, autocomplete: "new-password"
-    .actions
-      = f.submit "新規登録"
+  .sign-up__message
+    %h1 SCORELISTへようこそ
+  .sign-up__form
+    %h2 新規登録
+    = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+      = render "devise/shared/error_messages", resource: resource
+      .field
+        = f.label :nickname, "ニックネーム"
+        %span.require 必須
+        %br/
+        = f.text_field :nickname
+      .field
+        = f.label :email
+        %span.require 必須
+        %br/
+        = f.email_field :email, autofocus: true, autocomplete: "email"
+      .field
+        = f.label :password
+        - if @minimum_password_length
+          %em
+            (#{@minimum_password_length} 文字以上入力してください)
+        %span.require 必須
+        %br/
+        = f.password_field :password, autocomplete: "new-password"
+      .field
+        = f.label :password_confirmation
+        %p
+          確認のためもう一度入力してください
+        %br/
+        = f.password_field :password_confirmation, autocomplete: "new-password"
+      .actions
+        = f.submit "新規登録"
+.devise__shared__links
   = render "devise/shared/links"
-  .back
-    = link_to root_path do
-      トップページにもどる
+.back
+  = link_to root_path do
+    トップページにもどる
