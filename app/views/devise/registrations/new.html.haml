@@ -19,6 +19,7 @@
         = f.email_field :email, autocomplete: "email"
       .field
         = f.label :password
+        %br/
         - if @minimum_password_length
           %em
             (#{@minimum_password_length} 文字以上入力してください)
@@ -27,7 +28,7 @@
         = f.password_field :password, autocomplete: "new-password"
       .field
         = f.label :password_confirmation
-        %p
+        %p.field__message
           確認のためもう一度入力してください
         %span.require 必須
         %br/
