@@ -29,6 +29,7 @@
         = f.label :password_confirmation
         %p
           確認のためもう一度入力してください
+        %span.require 必須
         %br/
         = f.password_field :password_confirmation, autocomplete: "new-password"
       .actions
