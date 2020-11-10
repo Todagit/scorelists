@@ -1,10 +1,11 @@
 = render partial: "template/header"
   
 .top
-  .top__img
-  = image_tag "examimg.jpg"
-  %h2
-    共通テストのスコアの推移を確認できます
+  %section.firstView
+    %h2
+      ScoreListへようこそ
+    %h4
+      共通テストのスコアの推移を確認できます
   - if user_signed_in?  
     .top__new
       スコアを登録する
