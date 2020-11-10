@@ -8,10 +8,18 @@
     background-repeat: no-repeat;
     background-position: top center;
 
+    &__content {
+      max-width: 1280px;
+      width: 100%;
+      margin: 0 auto;
+      padding-top: 35px;
+    }
+
     &__message {
       font-size: 24px;
       font-weight: bold;
       color: $title;
     }
   }
+  
 }
