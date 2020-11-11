@@ -3,10 +3,11 @@
 .top
   %section.firstView
     .firstView__content
-      %h2.firstView__message
-        ScoreListへようこそ
-      %h4
-        共通テストのスコアの推移を確認できます
+      %h2.firstView__content__copy
+        %br 過去の自分を超えてゆけ
+      %p.firstView__content__text 
+        ScoreListはあなたの成長を記録し
+        %br 可視化してくれるアプリです
   - if user_signed_in?  
     .top__new
       スコアを登録する
