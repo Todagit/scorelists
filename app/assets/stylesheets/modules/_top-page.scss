@@ -35,10 +35,25 @@
   .secondView{
     width: 100%;
     height: 640px;
-    background-image: image-url('graph.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top right;
+    display: flex;
+    // background-image: image-url('graph.png');
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-position: top right;
+
+    &__content {
+
+      &__copy {
+        font-size: 24px;
+        color: red;
+      }
+
+      &__image {
+        height: 320px;
+        width: 256px;
+        
+      }
+    }
   }
   
 }
