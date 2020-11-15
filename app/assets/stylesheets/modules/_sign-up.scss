@@ -10,6 +10,7 @@ body {
   align-items: center;
   flex-direction: column;
   text-align: center;
+  padding-bottom: 50px;
   
   h2 {
     text-align: center;
@@ -46,4 +47,14 @@ body {
   &__message {
     color: skyblue;
   }
+}
+
+.devise__shared__links {
+  display: flex;
+  justify-content: center;
+}
+
+.back {
+  display: flex;
+  justify-content: center;
 }
