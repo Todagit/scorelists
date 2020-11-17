@@ -4,6 +4,8 @@
     %br/
     %h4 SCORELISTへようこそ
     %br/
+    %p.sign-up__message--text
+      会員登録されていない方は以下のフォームに記入をお願いします
   .sign-up__form
     = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
       = render "devise/shared/error_messages", resource: resource
