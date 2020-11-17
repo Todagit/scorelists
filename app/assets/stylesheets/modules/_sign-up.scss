@@ -18,21 +18,27 @@ a {
   
 
   &__message {
-    margin-top: 50px;
+    margin: 50px 0;
+
+    h2 {
+      text-align: center;
+      font-size: 32px;
+      font-weight: bold;
+      color: $title;
+      margin-bottom: 20px;
+    }
+  
+    h4 {
+      font-size: 24px;
+      color: $notice;
+    }
+  
+    &--text {
+      color: skyblue;
+    }
+
   }
   
-  h2 {
-    text-align: center;
-    font-size: 32px;
-    font-weight: bold;
-    color: $title;
-    margin-bottom: 20px;
-  }
-
-  h4 {
-    font-size: 24px;
-    color: $notice;
-  }
 }
 
 .require {
@@ -66,5 +72,5 @@ a {
 .back {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin: 50px 0;
 }
