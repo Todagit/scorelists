@@ -26,7 +26,7 @@
         %br/
         - if @minimum_password_length
           %em.field__message
-            (#{@minimum_password_length} 文字以上入力してください)
+            #{@minimum_password_length} 文字以上入力してください
         %br/
         = f.password_field :password, autocomplete: "new-password"
       .field
