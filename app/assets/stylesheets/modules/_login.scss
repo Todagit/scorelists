@@ -5,3 +5,16 @@
   text-align: center;
   padding-bottom: 50px;
 }
+
+.link_to {
+
+  &__new_password_path {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__new_registration_path {
+    display: flex;
+    justify-content: center;
+  }
+}
