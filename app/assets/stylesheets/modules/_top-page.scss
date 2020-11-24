@@ -36,10 +36,10 @@
     width: 100%;
     height: 640px;
     display: flex;
-    // background-image: image-url('graph.png');
-    // background-size: cover;
-    // background-repeat: no-repeat;
-    // background-position: top right;
+    background-image: image-url('graph.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right;
 
     &__content {
 
@@ -48,11 +48,11 @@
         color: red;
       }
 
-      &__image {
-        height: 320px;
-        width: 256px;
+      // &__image {
+      //   height: 320px;
+      //   width: 256px;
         
-      }
+      // }
     }
   }
   
