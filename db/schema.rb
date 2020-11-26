@@ -16,7 +16,12 @@ ActiveRecord::Schema.define(version: 2020_10_12_045125) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "user_id", null: false
-    t.integer "score1"
+    t.string "title1", null: false
+    t.integer "score1", null: false
+    t.string "title2"
+    t.integer "score2"
+    t.string "title3"
+    t.integer "score3"
     t.index ["user_id"], name: "index_scores_on_user_id"
   end
 
