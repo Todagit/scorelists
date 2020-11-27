@@ -39,6 +39,19 @@ a {
 
   }
   
+  .actions {
+    margin: 20px;
+    &__btn {
+      width: 328px;
+      height: 50px;
+      background-color: $notice;
+      border: 1px solid $notice;
+      border-radius: 4px;
+      color: $white;
+      cursor: pointer;
+    }
+  }
+
 }
 
 .require {
