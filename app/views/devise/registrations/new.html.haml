@@ -36,7 +36,7 @@
           確認のためもう一度入力してください
         = f.password_field :password_confirmation, autocomplete: "new-password"
       .actions
-        = f.submit "新規登録"
+        = f.submit "新規登録", class: "actions__btn"
 .devise__shared__links
   = render "devise/shared/links"
 .back
