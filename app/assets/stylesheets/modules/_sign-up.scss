@@ -77,11 +77,12 @@ a {
   }
 }
 
-// .link_to_login__message　{
-//   p {
-//     text-align: center;
-//   }
-// }
+.login__suggestion {
+  width: 328px;
+  margin: 0 auto;
+  text-align: center;
+  color: $link;
+}
 
 .link_to_login {
   display: flex;
