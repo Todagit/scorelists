@@ -23,8 +23,11 @@
 .link_to__new_password_path
   = link_to "パスワードを忘れてしまったらこちらへ", new_password_path(resource_name)
   %br/
+.border
 .link_to__new_registration_path
-  = link_to "新規登録", new_user_registration_path
+  = link_to new_user_registration_path do
+    .link_to__new_registration_path__btn
+      新規登録
 
 .back
   = link_to root_path do
