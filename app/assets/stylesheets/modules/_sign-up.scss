@@ -34,7 +34,7 @@ a {
     }
   
     &--text {
-      color: skyblue;
+      color: $link;
     }
 
   }
@@ -73,7 +73,7 @@ a {
     margin: 8px;
   }
   &__message {
-    color: skyblue;
+    color: $link;
   }
 }
 
