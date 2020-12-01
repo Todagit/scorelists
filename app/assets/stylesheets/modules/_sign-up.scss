@@ -77,11 +77,19 @@ a {
   }
 }
 
+.border {
+  height: 1px;
+  width: 100%;
+  background-color: lightgray;
+  margin-bottom: 50px;
+}
+
 .login__suggestion {
   width: 328px;
   margin: 0 auto;
   text-align: center;
-  color: $link;
+  color: red;
+  font-size: 18px;
 }
 
 .link_to_login {
