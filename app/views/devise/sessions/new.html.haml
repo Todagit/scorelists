@@ -21,7 +21,9 @@
       .actions
         = f.submit "ログイン", class: 'actions__btn'
 .link_to__new_password_path
-  = link_to "パスワードを忘れてしまったらこちらへ", new_password_path(resource_name)
+  = link_to new_password_path(resource_name) do
+    .link_to__new_password_path__btn
+      パスワードを忘れてしまったらこちらへ
   %br/
 .border
 .link_to__new_registration_path
