@@ -62,20 +62,28 @@
     display: flex;
     justify-content: center;
 
-    &__btn {
-      width: 328px;
-      height: 50px;
-      padding-top: 12px;
-      background-color: $notice;
-      border: 1px solid $notice;
-      border-radius: 4px;
-      color: $white;
-      cursor: pointer;
-      text-align: center;
-    }
+    &__wrapper {
 
-    a {
-      text-decoration: none;
+      &__message {
+        color: red;
+        text-align: center;
+      }
+
+      &__btn {
+        width: 328px;
+        height: 50px;
+        padding-top: 12px;
+        background-color: $notice;
+        border: 1px solid $notice;
+        border-radius: 4px;
+        color: $white;
+        cursor: pointer;
+        text-align: center;
+      }
+
+      a {
+        text-decoration: none;
+      }
     }
   }
 }
