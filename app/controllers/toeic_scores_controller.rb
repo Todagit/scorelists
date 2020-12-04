@@ -1,0 +1,2 @@
+class ToeicScoresController < ApplicationController
+end
