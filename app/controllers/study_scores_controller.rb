@@ -12,6 +12,9 @@ class StudyScoresController < ApplicationController
     end
   end
 
+  def create
+  end
+
   def edit
   end
   
