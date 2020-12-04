@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_12_045125) do
+ActiveRecord::Schema.define(version: 2020_12_04_230738) do
 
   create_table "scores", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -43,6 +43,16 @@ ActiveRecord::Schema.define(version: 2020_10_12_045125) do
     t.integer "english_l"
     t.integer "english_r"
     t.index ["user_id"], name: "index_study_scores_on_user_id"
+  end
+
+  create_table "toeic_scores", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.date "test_date"
+    t.integer "test_number"
+    t.integer "listening_score"
+    t.integer "reading_score"
+    t.integer "total_score"
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
