@@ -1,0 +1,2 @@
+class ToeicScore < ApplicationRecord
+end
