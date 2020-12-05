@@ -49,7 +49,7 @@ ActiveRecord::Schema.define(version: 2020_12_04_230738) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.date "test_date"
-    t.integer "test_number"
+    t.integer "administration_number"
     t.integer "listening_score"
     t.integer "reading_score"
     t.integer "total_score"
