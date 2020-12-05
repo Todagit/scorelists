@@ -4,7 +4,7 @@ class CreateToeicScores < ActiveRecord::Migration[5.2]
 
       t.timestamps
       t.date :test_date
-      t.integer :test_number
+      t.integer :administration_number
       t.integer :listening_score
       t.integer :reading_score
       t.integer :total_score
