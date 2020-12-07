@@ -1,0 +1,13 @@
+.new__toeicscore {
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+  &__title {
+
+    h2 {
+      color: $title;
+      font-size: 24px;
+    }
+  }
+}
