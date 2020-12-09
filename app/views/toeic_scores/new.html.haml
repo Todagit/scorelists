@@ -1,8 +1,8 @@
 .new__toeicscore
   .new__toeicscore__title
     %h2 TOEIC L&R のスコアを登録できます
-  .new__studyscore__form
-    =form_with model: @toeic_score ,class:"new__studyscore__form__box",local: true do |f|
+  .new__toeicscore__form
+    =form_with model: @toeic_score ,class:"new__toeicscore__form__box",local: true do |f|
       .f__field
         = f.label :test_date, "テストを実施した日付"
         = f.date_select :test_date
@@ -17,8 +17,11 @@
         = f.number_field :reading_score 
       .f__submit
         = f.submit "登録する"
-    -# .new__studyscore__total
-    -#   -
+    .new__studyscore__total
+      .new__studyscore__total__title
+        合計点
+      .new__studyscore__total__score
+        —
   .back
     = link_to root_path do
       トップページにもどる
