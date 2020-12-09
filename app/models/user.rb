@@ -13,4 +13,5 @@ class User < ApplicationRecord
 
   has_many :scores
   has_many :study_scores
+  has_many :toeic_scores
 end
