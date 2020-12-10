@@ -1,13 +1,23 @@
 = render partial: "template/header"
 
 .mypage
-  %h2.mypage__title
-    マイページ
-  %p.mypage__describe
-    自分の成績の詳細が見れます
-  .mypage__user--info
-    ユーザー名
-    = @nickname
+  .mypage__inner
+    %h2.mypage__title
+      マイページ
+    %p.mypage__describe
+      自分の成績の詳細が見れます
+    .mypage__user--info
+      ユーザー名
+      = @nickname
+    .mypage__user__link-to-scores
+      .mypage__user__link-to-scores__studyscore
+
+      .mypage__user__link-to-scores__toeicscore
+        = link_to toeic_scores_path do
+          TOEIC L&R のスコアを閲覧する
+
+      .mypage__user__link-to-scores__score
+
   .back
     = link_to root_path do
       トップページにもどる
