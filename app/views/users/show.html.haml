@@ -1,3 +1,5 @@
+
+
 .mypage
   %h2.mypage__title
     マイページ
@@ -6,3 +8,6 @@
   .mypage__user--info
     ユーザー名
     = @nickname
+  .back
+    = link_to root_path do
+      トップページにもどる
