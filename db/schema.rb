@@ -48,11 +48,13 @@ ActiveRecord::Schema.define(version: 2020_12_04_230738) do
   create_table "toeic_scores", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.date "test_date"
-    t.integer "administration_number"
-    t.integer "listening_score"
-    t.integer "reading_score"
+    t.bigint "user_id", null: false
+    t.date "test_date", null: false
+    t.integer "administration_number", null: false
+    t.integer "listening_score", null: false
+    t.integer "reading_score", null: false
     t.integer "total_score"
+    t.index ["user_id"], name: "index_toeic_scores_on_user_id"
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -72,4 +74,5 @@ ActiveRecord::Schema.define(version: 2020_12_04_230738) do
 
   add_foreign_key "scores", "users"
   add_foreign_key "study_scores", "users"
+  add_foreign_key "toeic_scores", "users"
 end
