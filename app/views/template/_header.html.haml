@@ -2,7 +2,8 @@
   .header__inner
     .header__inner__left
       %h1.title
-        ScoreLists
+        = link_to root_path do
+          ScoreLists
     .header__inner__right
       %ul.header__inner__right__list
         - if user_signed_in?
