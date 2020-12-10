@@ -1,0 +1,9 @@
+.index__toeicscore
+  .index__toeicscore__title
+    今まで登録したTOEIC L&Rのスコアを確認できます
+  .index__toeicscore__body
+    - @toeic_scores.each do |toeic_score|
+      .index__toeicscore__list
+  .back
+    = link_to root_path do
+      トップページにもどる
