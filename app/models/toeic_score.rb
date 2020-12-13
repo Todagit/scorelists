@@ -6,6 +6,7 @@ class ToeicScore < ApplicationRecord
   validates  :administration_number,  presence: true
   validates  :listening_score,        presence: true
   validates  :reading_score,          presence: true
+  validates  :total_score,            presence: true
 
   
   before_save do
