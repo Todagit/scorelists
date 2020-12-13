@@ -25,7 +25,19 @@ class ToeicScoresController < ApplicationController
   end
 
   def create
-    ToeicScore.create(toeic_score_params)
+
+    @toeic_score = ToeicScore.new(toeic_score_params)
+    
+    if @toeic_score.valid?
+      @toeic_score.save
+      flash[:notice] = 'スコアを登録しました'
+      redirect_to user_path
+    else
+      flash.now[:alert] = '必須項目を入力してください'
+      @toeic_score = ToeicScore.new(toeic_score_params)
+      render :new
+    end
+
   end
 
   def edit
