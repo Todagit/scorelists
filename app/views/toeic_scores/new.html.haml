@@ -15,13 +15,13 @@
       .f__field
         = f.label :reading_score, "リーディング"
         = f.number_field :reading_score 
+      .new__studyscore__total
+        .new__studyscore__total__title
+          合計点
+        .new__studyscore__total__score
+          —
       .f__submit
-        = f.submit "登録する"
-    .new__studyscore__total
-      .new__studyscore__total__title
-        合計点
-      .new__studyscore__total__score
-        —
+        = f.submit "登録する"  
   .back
     = link_to root_path do
       トップページにもどる
