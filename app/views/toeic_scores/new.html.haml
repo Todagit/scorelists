@@ -5,15 +5,19 @@
     =form_with model: @toeic_score ,class:"new__toeicscore__form__box",local: true do |f|
       .f__field
         = f.label :test_date, "テストを実施した日付"
+        %br/
         = f.date_select :test_date
       .f__field
         = f.label :administration_number, "受験したテストの開催回"
+        %br/
         = f.number_field :administration_number
       .f__field
         = f.label :listening_score, "リスニング"
+        %br/
         = f.number_field :listening_score
       .f__field
         = f.label :reading_score, "リーディング"
+        %br/
         = f.number_field :reading_score 
       .new__studyscore__total
         .new__studyscore__total__title
