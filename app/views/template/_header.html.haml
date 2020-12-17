@@ -10,13 +10,17 @@
           %li.header__inner__right__list__login
             = link_to "/users/#{current_user.id}" do
               %span マイページ
+              %i.fas.fa-house-user
           %li.header__inner__right__list__new
             = link_to destroy_user_session_path, method: :delete do
               %span ログアウト
+              %i.fas.fa-sign-out-alt
         - else
           %li.header__inner__right__list__login
             = link_to new_user_session_path do
               %span ログイン 
+              %i.fas.fa-sign-in-alt
           %li.header__inner__right__list__new
             = link_to new_user_registration_path do
               %span 新規登録
+              %i.fas.fa-user-plus
