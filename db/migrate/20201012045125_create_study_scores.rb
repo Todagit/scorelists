@@ -17,6 +17,7 @@ class CreateStudyScores < ActiveRecord::Migration[5.2]
       t.integer    :physics
       t.integer    :english_l
       t.integer    :english_r
+      t.integer    :total_score
     end
   end
 end

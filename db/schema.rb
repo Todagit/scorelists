@@ -42,6 +42,7 @@ ActiveRecord::Schema.define(version: 2020_12_04_230738) do
     t.integer "physics"
     t.integer "english_l"
     t.integer "english_r"
+    t.integer "total_score"
     t.index ["user_id"], name: "index_study_scores_on_user_id"
   end
 
