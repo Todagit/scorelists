@@ -33,7 +33,6 @@ class ToeicScoresController < ApplicationController
       flash[:notice] = 'スコアを登録しました'
       redirect_to root_path
     else
-      # binding.pry
       flash.now[:alert] = '必須項目を入力してください'
       @toeic_score = ToeicScore.new(toeic_score_params)
       render :new
