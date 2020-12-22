@@ -17,5 +17,11 @@ class StudyScoresController < ApplicationController
 
   def edit
   end
+
+  private
+
+  def study_score_params
+    params.require(:study_score).permit(:test_name, :test_date, :japanese, :math1a, :math2b, :worldhistory, :japanesehistory, :modernsociety, :geography, :chemistry, :physics, :english_l, :english_r).merge(user_id: current_user.id)
+  end
   
 end
