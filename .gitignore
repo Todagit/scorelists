@@ -29,3 +29,6 @@
 /.DS_Store
 app/.DS_Store
 public/uploads/*
+.DS_Store
+app/.DS_Store
+app/assets/.DS_Store
