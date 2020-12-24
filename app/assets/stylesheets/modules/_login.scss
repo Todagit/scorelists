@@ -18,6 +18,10 @@
     color: $notice;
   }
 
+  .field__checkbox {
+    color: $message;
+  }
+
   .actions {
     margin: 20px;
     &__btn {
@@ -65,7 +69,7 @@
     &__wrapper {
 
       &__message {
-        color: $link;
+        color: $message;
         text-align: center;
       }
 
