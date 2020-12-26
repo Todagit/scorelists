@@ -70,6 +70,11 @@
       color: $message;
 
     }
-    
+
+    a {
+      text-decoration: none;
+      color: $link;
+    }
+
   }
 }
