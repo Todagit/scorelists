@@ -1,6 +1,13 @@
 .create__toeicscore
   .create__toeicscore__message
     スコアを登録しました！
+  // ボーダー
+  .border
+  // ボーダー
+  .link_to_userpage
+    = link_to "/users/#{current_user.id}" do
+      %span マイページ
   .back
     = link_to root_path do
-      トップページにもどる
+      .back__btn
+        トップページにもどる
