@@ -31,7 +31,7 @@ class ToeicScoresController < ApplicationController
     if @toeic_score.valid?
       @toeic_score.save
       flash[:notice] = 'スコアを登録しました'
-      redirect_to root_path
+      # redirect_to root_path
     else
       flash.now[:alert] = '必須項目を入力してください'
       @toeic_score = ToeicScore.new(toeic_score_params)
