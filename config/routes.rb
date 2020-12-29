@@ -4,6 +4,6 @@ Rails.application.routes.draw do
   resources :users
   resources :scores, only: [:index, :new]
   resources :study_scores, only: [:index, :new, :create, :edit]
-  resources :toeic_scores, except: [:show]
+  resources :toeic_scores
 
 end
