@@ -43,6 +43,22 @@ class ToeicScoresController < ApplicationController
   def edit
   end
 
+  def update
+
+  end
+
+  def destroy
+    if @toeic_score.destroy
+      redirect_to "/users/#{current_user.id}"
+    else
+      render :show
+    end 
+  end
+
+  def show
+  end
+  
+
   private
 
   def toeic_score_params
