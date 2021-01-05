@@ -14,15 +14,15 @@ class ToeicScore < ApplicationRecord
   
   before_save do
 
-    if listening_score % 5 != 0 || reading_score % 5 != 0
-      flash.now[:alert] = '正しいスコアを入力してください'
-      @toeic_score = ToeicScore.new(toeic_score_params)
-      render :new
-    else
-      self.total_score = listening_score + reading_score
-    end
+    # if listening_score % 5 != 0 || reading_score % 5 != 0
+    #   flash.now[:alert] = '正しいスコアを入力してください'
+    #   @toeic_score = ToeicScore.new(toeic_score_params)
+    #   render :new
+    # else
+    #   self.total_score = listening_score + reading_score
+    # end
 
-    # self.total_score = listening_score + reading_score
+    self.total_score = listening_score + reading_score
   end
 
 end
