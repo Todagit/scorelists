@@ -3,8 +3,8 @@ class CreateStudyScores < ActiveRecord::Migration[5.2]
     create_table :study_scores do |t|
 
       t.timestamps
-      t.references :user,    null:false, foreign_key: true
-      t.string     :test_name
+      t.references :user,         null:false, foreign_key: true
+      t.string     :test_name,    null:false
       t.date       :test_date
       t.integer    :japanese
       t.integer    :math1a
@@ -17,6 +17,8 @@ class CreateStudyScores < ActiveRecord::Migration[5.2]
       t.integer    :physics
       t.integer    :english_l
       t.integer    :english_r
+      t.integer    :other1
+      t.integer    :other2
       t.integer    :total_score
     end
   end

@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(version: 2020_12_04_230738) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "user_id", null: false
-    t.string "test_name"
+    t.string "test_name", null: false
     t.date "test_date"
     t.integer "japanese"
     t.integer "math1a"
@@ -42,6 +42,8 @@ ActiveRecord::Schema.define(version: 2020_12_04_230738) do
     t.integer "physics"
     t.integer "english_l"
     t.integer "english_r"
+    t.integer "other1"
+    t.integer "other2"
     t.integer "total_score"
     t.index ["user_id"], name: "index_study_scores_on_user_id"
   end
