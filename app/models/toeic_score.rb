@@ -8,9 +8,6 @@ class ToeicScore < ApplicationRecord
                                       numericality: { only_integer: true, greater_than_or_equal_to: 5, less_than_or_equal_to: 495 }
   validates  :reading_score,          presence: true,
                                       numericality: { only_integer: true, greater_than_or_equal_to: 5, less_than_or_equal_to: 495 }
-
-  # validates  :listening_score,        numericality: { greater_than_or_equal_to: 5, less_than_or_equal_to: 495 }
-  # validates  :reading_score,          numericality: { greater_than_or_equal_to: 5, less_than_or_equal_to: 495 }
   
   before_save do
 
