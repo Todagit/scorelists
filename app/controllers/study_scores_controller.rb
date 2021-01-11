@@ -18,6 +18,10 @@ class StudyScoresController < ApplicationController
   def edit
   end
 
+  def show
+  end
+  
+
   private
 
   def study_score_params
