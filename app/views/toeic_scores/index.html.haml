@@ -6,6 +6,16 @@
   .index__toeicscore__body
     - @toeic_scores.each do |toeic_score|
       .index__toeicscore__list
+        %li.index__toeicscore__list__administration
+          = toeic_score.administration_number
+        %li.index__toeicscore__list__test_date
+          = toeic_score.test_date
+        %li.index__toeicscore__list__listening_score
+          = toeic_score.listening_score
+        %li.index__toeicscore__list__reading_score
+          = toeic_score.reading_score
+        %li.index__toeicscore__list__total_score
+          = toeic_score.total_score
   .back
     = link_to root_path do
       トップページにもどる
