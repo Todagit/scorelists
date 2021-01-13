@@ -6,19 +6,19 @@
   .index__toeicscore__body
     - @toeic_scores.each do |toeic_score|
       .index__toeicscore__list
-        %li.index__toeicscore__list__administration
+        .index__toeicscore__list__administration
           テストの開催回
           = toeic_score.administration_number
-        %li.index__toeicscore__list__test_date
+        .index__toeicscore__list__test_date
           テストの開催日
           = toeic_score.test_date
-        %li.index__toeicscore__list__listening_score
+        .index__toeicscore__list__listening_score
           リスニング
           = toeic_score.listening_score
-        %li.index__toeicscore__list__reading_score
+        .index__toeicscore__list__reading_score
           リーディング
           = toeic_score.reading_score
-        %li.index__toeicscore__list__total_score
+        .index__toeicscore__list__total_score
           合計スコア
           = toeic_score.total_score
   .back
