@@ -7,15 +7,15 @@ $(function(){
 
     const input2 = document.querySelector(".f__field__score__reading_score");
 
-    // if (input1 % 5 === 0 && input2 % 5 === 0){
+    if (input1 % 5 === 0 && input2 % 5 === 0){
 
-    //   $('.f__submit__btn').prop('disabled', false);
+      $('.f__submit__btn').prop('disabled', false);
 
-    // } else {
+    } else {
 
-    //   $('.f__submit__btn').prop('disabled', true);
+      $('.f__submit__btn').prop('disabled', true);
 
-    // }
+    }
 
   });
 });
