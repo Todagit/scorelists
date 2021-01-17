@@ -9,11 +9,11 @@ $(function(){
 
     if (input1 % 5 === 0 && input2 % 5 === 0){
 
-      $('.f__submit__btn').prop('disabled', false);
+      $('.f__submit__btn').attr('disabled', false);
 
     } else {
 
-      $('.f__submit__btn').prop('disabled', true);
+      $('.f__submit__btn').attr('disabled', true);
 
     }
 
