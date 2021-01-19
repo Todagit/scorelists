@@ -3,9 +3,9 @@ $(function(){
     
     e.preventDefault();
 
-    // const input1 = document.querySelector(".f__field__score__listening_score");
-
-    // const input2 = document.querySelector(".f__field__score__reading_score");
+    // リスニングおよびリーディングのスコアが5の倍数で無い時
+    // 不正なスコアと判定して「登録する」ボタン(submitボタン)を押せないようにする。
+    // つまり、正しいスコアのときはsubmitボタンの[disabled]を外す。
 
     const input1 = $( '.f__field__score__listening_score' ).val();
 
