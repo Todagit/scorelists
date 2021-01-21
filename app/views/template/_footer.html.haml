@@ -1,23 +1,24 @@
 %footer.footer__wrapper
   .footer__innner
     %ul.contents
-    %li.content
-      %h2.content__head ScoreListsについて
-      %ul
-        %li= link_to '会社概要（運営会社）', '#', class: "footer-link"
-        %li= link_to 'プライバシーポリシー', '#', class: "footer-link"
-        %li= link_to 'ScoreLists利用規約', '#', class: "footer-link"
-    %li.content
-      %h2.content__head ScoreListsを見る
-      %ul
-        %li= link_to 'カテゴリー一覧', '#', class: "footer-link"
-        %li= link_to 'ブランド一覧', '#', class: "footer-link"
-    %li.content
-      %h2.content__head ヘルプ＆ガイド
-      %ul
-        %li= link_to 'ScoreListsガイド','#', class: "footer-link"
-        %li= link_to 'ScoreListsロゴ利用ガイドライン', '#', class: "footer-link"
-        %li= link_to 'お知らせ', '#', class: "footer-link"
-  .main-footer__logo
+      %li.content
+        %h2.content__head ScoreListsについて
+        %ul
+          %li= link_to '会社概要（運営会社）', '#', class: "footer-link"
+          %li= link_to 'プライバシーポリシー', '#', class: "footer-link"
+          %li= link_to 'ScoreLists利用規約', '#', class: "footer-link"
+      %li.content
+        %h2.content__head ScoreListsを見る
+        %ul
+          %li= link_to 'カテゴリー一覧', '#', class: "footer-link"
+          %li= link_to 'ブランド一覧', '#', class: "footer-link"
+      %li.content
+        %h2.content__head ヘルプ＆ガイド
+        %ul
+          %li= link_to 'ScoreListsガイド','#', class: "footer-link"
+          %li= link_to 'ScoreListsロゴ利用ガイドライン', '#', class: "footer-link"
+          %li= link_to 'お知らせ', '#', class: "footer-link"
+  .footer__logo
     = link_to root_path do
-      %p © ScoreLists
+      .footer__logo__text
+        %p © ScoreLists
