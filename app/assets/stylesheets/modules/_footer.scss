@@ -1,4 +1,9 @@
 .footer__wrapper {
+
+  a {
+    text-decoration: none;
+  }
+
   padding: 60px 0;
   color: $white;
   background-color: #202020;
@@ -37,9 +42,9 @@
     &__text {
       color: $white;
       font-size: 36px;
-      a {
-        text-decoration: none;
-      }
+      // a {
+      //   text-decoration: none;
+      // }
     }
   }
 }
