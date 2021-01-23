@@ -34,17 +34,16 @@
       }
     }
   }
-  &__logo {
-    .footer-logo {
-      width: 160px;
-      height: 46px;
-    }
-    &__text {
-      color: $white;
-      font-size: 36px;
-      // a {
-      //   text-decoration: none;
-      // }
-    }
+  .footer-logo {
+    width: 160px;
+    height: 46px;
   }
+  &__text {
+    color: $white;
+    font-size: 36px;
+    // a {
+    //   text-decoration: none;
+    // }
+  }
+
 }
