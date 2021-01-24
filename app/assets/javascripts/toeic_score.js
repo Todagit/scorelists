@@ -11,7 +11,7 @@ $(function(){
     
     let total_score = eval(listening_score) + eval(reading_score);
     
-    $('.new__studyscore__total__score').html(total_score);
+    $('.new__toeicscore__total__score').html(total_score);
     
   });
 });
