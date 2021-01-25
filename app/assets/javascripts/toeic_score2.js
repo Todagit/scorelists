@@ -14,12 +14,12 @@ $(function(){
     if (input1 % 5 == 0 && input2 % 5 == 0){
 
       $('.f__submit__btn').prop("disabled", false);
-      $('.f__submit__errormassege').html('');
+      $('.f__submit__errormessage').html('');
 
     } else {
 
       $('.f__submit__btn').prop("disabled", true);
-      $('.f__submit__errormassege').html('入力されたスコアは5の倍数になっていますか？');
+      $('.f__submit__errormessage').html('入力されたスコアは5の倍数になっていますか？');
 
     }
 
