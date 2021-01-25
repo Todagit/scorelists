@@ -19,7 +19,7 @@ $(function(){
     } else {
 
       $('.f__submit__btn').prop("disabled", true);
-      $('.f__submit__errormassege').html('入力されたスコアが間違っているようです');
+      $('.f__submit__errormassege').html('入力されたスコアは5の倍数になっていますか？');
 
     }
 
