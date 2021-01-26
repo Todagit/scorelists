@@ -65,7 +65,9 @@
         cursor: pointer;
       }
 
-      
+      &__errormessage {
+        color: $message;
+      }
     }
   }
 
