@@ -9,24 +9,28 @@
       .f__field
         = f.label :test_date, "テストを実施した日付"
         %br/
+        %p TEST DATE
+        %br/
         = f.date_select :test_date
       .f__field
         = f.label :administration_number, "受験したテストの開催回"
         %br/
+        %p Administration Number
+        %br/
         = f.number_field :administration_number
       .f__field
-        = f.label :listening_score, "Listening Score"
+        = f.label :listening_score, "Listening"
         %br/
         = f.number_field :listening_score, class: "f__field__score__listening_score"
       .f__field
-        = f.label :reading_score, "Reading Score"
+        = f.label :reading_score, "Reading"
         %br/
         = f.number_field :reading_score, class: "f__field__score__reading_score"
       .new__toeicscore__total
         .new__toeicscore__total__title
-          Total Score
+          TOTAL SCORE
         .new__toeicscore__total__score
-          —
+          -# -
       .f__submit
         = f.submit "登録する", class: "f__submit__btn", disabled: true
       .f__submit__errormessage
