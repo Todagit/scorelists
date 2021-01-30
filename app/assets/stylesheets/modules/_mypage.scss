@@ -6,7 +6,12 @@
     color: $notice;
   }
 
-  &__user--info {
+  &__user__info {
     color: $message;
+    
+    &--name {
+      color: $notice;
+    }
   }
+
 }
