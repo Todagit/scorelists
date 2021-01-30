@@ -6,10 +6,12 @@
       マイページ
     %p.mypage__describe
       自分の成績の詳細が見れます
-    .mypage__user--info
-      ユーザー名
-      %br/
-      = @nickname
+    .mypage__user__info
+      .mypage__user__info--title
+        ユーザー名
+        %br/
+      .mypage__user--info--name
+        = @nickname
     .mypage__user__link-to-scores
       .mypage__user__link-to-scores__message
         過去に登録したスコアを確認するにはこちら
