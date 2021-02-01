@@ -1,13 +1,17 @@
 .mypage {
 
   h2 {
-    font-size: 24px;
+    font-size: 36px;
     font-weight: bold;
     color: $notice;
   }
 
   &__user__info {
     color: $message;
+
+    &--title{
+      font-size: 24px;
+    }
     
     &--name {
       color: $notice;
