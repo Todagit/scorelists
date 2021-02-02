@@ -1,9 +1,15 @@
 .mypage {
 
-  h2 {
+  &__title {
+    margin-top: 50px;
     font-size: 36px;
     font-weight: bold;
     color: $notice;
+    text-align: center;
+  }
+
+  &__describe {
+    text-align: center;
   }
 
   &__user__info {
@@ -15,6 +21,12 @@
     
     &--name {
       color: $notice;
+    }
+  }
+
+  &__user__link-to-scores{
+    &__message {
+      text-align: center;
     }
   }
 
