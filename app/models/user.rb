@@ -12,6 +12,7 @@ class User < ApplicationRecord
     presence: true
 
   has_many :scores
+  has_many :comments
   has_many :study_scores
   has_many :toeic_scores
 end
