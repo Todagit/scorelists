@@ -1,6 +1,7 @@
 class ToeicScore < ApplicationRecord
 
   belongs_to :user
+  has_many :comments
 
   validates  :test_date,              presence: true
   validates  :administration_number,  presence: true
