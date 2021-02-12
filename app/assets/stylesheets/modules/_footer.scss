@@ -1,7 +1,7 @@
 .footer__wrapper {
 
   a {
-    text-decoration: none;
+    text-decoration: none !important;
   }
 
   padding: 60px 0;
@@ -37,15 +37,20 @@
   .footer-logo {
     width: 160px;
     height: 46px;
-  
-    &__text {
-      color: $white;
-      font-size: 36px;
-      // a {
-      //   text-decoration: none;
-      // }
+    text-decoration: none;
+    a {
+      &__text {
+        color: $white !important;
+        font-size: 36px;
+        text-decoration: none;
+      }
     }
-    
   }
 
 }
+
+// a, a:link, a:visited, a:focus, a:hover, a:active {
+  
+//   text-decoration:none;
+  
+//   }
