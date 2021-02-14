@@ -26,5 +26,9 @@
     - else
       .top__new__notLogin
         会員登録をして自分のスコアを記録しましょう！
+      .top__new__new-registration__link 
+        = link_to new_user_registration_path do
+          会員の新規登録はこちらから！
+        
 
 = render partial: "template/footer"
