@@ -67,7 +67,7 @@
       color: $link;
     }
 
-    &__title{
+    &__title {
 
       margin: 50px 0;
       font-size: 24px;
@@ -75,6 +75,12 @@
 
     }
 
+    &__notLogin {
+      margin: 50px;
+      font-size: 36px;
+      text-align: center;
+      color: red;
+    }
     
   }
 }
