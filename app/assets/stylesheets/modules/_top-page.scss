@@ -64,7 +64,7 @@
 
     a {
       text-decoration: none;
-      color: $link;
+      color: $white;
     }
 
     &__title {
@@ -86,10 +86,9 @@
       width: 328px;
       height: 50px;
       padding-top: 12px;
-      background-color: $link;
-      border: 1px solid $link;
+      background-color: $notice;
+      border: 1px solid $notice;
       border-radius: 4px;
-      color: $white;
       cursor: pointer;
       text-align: center;
     }
