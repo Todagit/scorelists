@@ -48,6 +48,9 @@ class ToeicScoresController < ApplicationController
   end
 
   def destroy
+    toeic_score = ToeicScore.find(params[:id])
+    toeic_score.destroy
+    
     if @toeic_score.destroy
       redirect_to "/users/#{current_user.id}"
     else
