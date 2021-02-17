@@ -80,6 +80,13 @@
 
     }
 
+    &__message {
+      margin: 25px;
+      color: $message;
+      text-align: center;
+    }
+
+
     
     &__studyscore__link {
       margin: 25px;
