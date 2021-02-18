@@ -10,6 +10,7 @@
 
   &__describe {
     text-align: center;
+    color: $message;
   }
 
   &__user__info {
@@ -25,10 +26,12 @@
   }
 
   &__user__link-to-scores{
+
     &__message {
       text-align: center;
       color: $message;
     }
+
   }
 
 }
