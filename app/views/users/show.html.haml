@@ -15,7 +15,6 @@
     .mypage__user__link-to-scores
       .mypage__user__link-to-scores__message
         過去に登録したスコアを確認するにはこちら
-      .mypage__user__link-to-scores__studyscore
 
       .mypage__user__link-to-scores__toeicscore
         = link_to toeic_scores_path do
@@ -24,6 +23,8 @@
       .mypage__user__link-to-scores__studyscore
         = link_to study_scores_path do
           共通テストのスコアを閲覧する
+
+      .mypage__user__link-to-scores__score
 
   // ボーダー
   .border
