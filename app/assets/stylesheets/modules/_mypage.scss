@@ -1,7 +1,10 @@
 .mypage {
 
-  &__title {
+  &__inner {
     margin-top: 50px;
+  }
+  
+  &__title {
     font-size: 36px;
     font-weight: bold;
     color: $notice;
