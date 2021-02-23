@@ -25,15 +25,13 @@
   }
 
   &__user__info {
-    // color: $notice;
+    font-size: 24px;
 
     &--title{
-      font-size: 24px;
       color: $notice;
     }
     
     &--name {
-      font-size: 36px;
       color: springgreen;
     }
   }
