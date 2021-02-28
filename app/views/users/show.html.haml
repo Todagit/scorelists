@@ -23,15 +23,18 @@
       .mypage__user__link-to-scores__message
         過去に登録したスコアを確認するにはこちら
 
-      .mypage__user__link-to-scores__toeicscore
-        = link_to toeic_scores_path do
-          TOEIC L&R のスコアを閲覧する
+      .mypage__user__link-to-scores__links
+        .mypage__user__link-to-scores__toeicscore
+          = link_to toeic_scores_path do
+            .mypage__user__link-to-scores__links__btn
+              TOEIC L&R のスコアを閲覧する
 
-      .mypage__user__link-to-scores__studyscore
-        = link_to study_scores_path do
-          共通テストのスコアを閲覧する
+        .mypage__user__link-to-scores__studyscore
+          = link_to study_scores_path do
+            .mypage__user__link-to-scores__links__btn
+              共通テストのスコアを閲覧する
 
-      .mypage__user__link-to-scores__score
+        .mypage__user__link-to-scores__score
 
   // ボーダー
   .border
