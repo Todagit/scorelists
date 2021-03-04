@@ -15,21 +15,21 @@
   -#     Currently waiting confirmation for: #{resource.unconfirmed_email}
   .field
     = f.label :password
-    %i (leave blank if you don't want to change it)
+    %i (変更しない場合は空欄のままにしてください)
     %br/
     = f.password_field :password, autocomplete: "new-password"
     - if @minimum_password_length
       %br/
       %em
         = @minimum_password_length
-        characters minimum
+        文字以上にしてください
   .field
     = f.label :password_confirmation
     %br/
     = f.password_field :password_confirmation, autocomplete: "new-password"
   .field
     = f.label :current_password
-    %i (we need your current password to confirm your changes)
+    %i パスワードを変更する場合は、新しく設定したいパスワードをもう一度入力してください
     %br/
     = f.password_field :current_password, autocomplete: "current-password"
   .actions
