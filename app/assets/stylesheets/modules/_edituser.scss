@@ -6,9 +6,12 @@
   text-align: center;
   padding-bottom: 50px;
 
-  h2 {
+  h2.ediiUser__title {
+
+    padding: 50px 0;
+    font-weight: bold;
     color: $message;
     font-size: 24px;
   }
-  
+
 }
