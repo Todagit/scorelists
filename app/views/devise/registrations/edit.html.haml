@@ -16,6 +16,7 @@
         Currently waiting confirmation for: #{resource.unconfirmed_email}
     .field
       = f.label :password
+      %br/
       %i (変更しない場合は空欄のままにしてください)
       %br/
       = f.password_field :password, autocomplete: "new-password"
@@ -30,6 +31,7 @@
       = f.password_field :password_confirmation, autocomplete: "new-password"
     .field
       = f.label :current_password
+      %br/
       %i パスワードを変更する場合は、この欄に現在のパスワードを入力してください
       %br/
       = f.password_field :current_password, autocomplete: "current-password"
@@ -38,4 +40,5 @@
   %h3 アカウントを削除する
   %p
     Unhappy? #{button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete}
-  = link_to "戻る", :back
+  .back
+    = link_to "戻る", :back
