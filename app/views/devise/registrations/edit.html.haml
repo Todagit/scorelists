@@ -37,8 +37,14 @@
       = f.password_field :current_password, autocomplete: "current-password"
     .actions
       = f.submit "Update"
+  // ボーダー
+  .border
+  // ボーダー
   %h3 アカウントを削除する
   %p
     Unhappy? #{button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete}
+  // ボーダー
+  .border
+  // ボーダー
   .back
     = link_to "戻る", :back
