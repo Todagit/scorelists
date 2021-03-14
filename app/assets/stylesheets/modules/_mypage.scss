@@ -40,11 +40,22 @@
   }
 
   &__user__edit {
-    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__btn {
+      text-align: center;
+      @include btn();
+      background-color: $notice;
+      border: 1px solid $notice;
+    }
   }
 
   &__user__link-to-scores{
     text-align: center;
+    align-items: center;
 
     &__message {
       margin: 25px 0;
