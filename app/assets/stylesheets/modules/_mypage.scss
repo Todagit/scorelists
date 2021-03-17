@@ -47,6 +47,8 @@
 
     &__message {
       text-align: center;
+      color: $message;
+      font-weight: bold;
     }
 
     &__btn {
