@@ -44,6 +44,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 
     &__message {
       text-align: center;
@@ -66,6 +67,7 @@
     &__message {
       margin: 25px 0;
       color: $message;
+      font-weight: bold;
     }
 
     &__links {
