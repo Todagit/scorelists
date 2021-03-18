@@ -31,6 +31,11 @@
   .border
   // ボーダー
 
+  .link-to-userpage
+    = link_to "/users/#{current_user.id}" do
+      .link-to-userpage__btn
+        マイページに戻る
+
   .back
     = link_to root_path do
       .back__btn
