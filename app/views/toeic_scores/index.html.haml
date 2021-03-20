@@ -4,28 +4,32 @@
   .index__toeicscore__title
     今まで登録したTOEIC L&Rのスコアを確認できます
   .index__toeicscore__body
-    - @toeic_scores.each do |toeic_score|
-      .index__toeicscore__list
-        .index__toeicscore__list__administration__title
-          テストの開催回
-        .index__toeicscore__list__administration__score
-          = toeic_score.administration_number
-        .index__toeicscore__list__testdate__title
-          テストの開催日
-        .index__toeicscore__list__testdate__date
-          = toeic_score.test_date
-        .index__toeicscore__list__listening__title
-          リスニング
-        .index__toeicscore__list__listening__score
-          = toeic_score.listening_score
-        .index__toeicscore__list__reading__title
-          リーディング
-        .index__toeicscore__list__reading__score
-          = toeic_score.reading_score
-        .index__toeicscore__list__total__title
-          合計スコア
-        .index__toeicscore__list__total__score
-          = toeic_score.total_score
+    %ul.index__toeicscore__list__administration__title
+      テストの開催回
+    %ul.index__toeicscore__list__testdate__title
+      テストの開催日
+    %ul.index__toeicscore__list__listening__title
+      リスニング
+    %ul.index__toeicscore__list__reading__title
+      リーディング
+    %ul.index__toeicscore__list__total__title
+      合計スコア
+  - @toeic_scores.each do |toeic_score|
+    %li.index__toeicscore__list
+      %ul.index__toeicscore__list__administration__score
+        = toeic_score.administration_number
+      
+      %ul.index__toeicscore__list__testdate__date
+        = toeic_score.test_date
+      
+      %ul.index__toeicscore__list__listening__score
+        = toeic_score.listening_score
+      
+      %ul.index__toeicscore__list__reading__score
+        = toeic_score.reading_score
+      
+      %ul.index__toeicscore__list__total__score
+        = toeic_score.total_score
 
   // ボーダー
   .border
