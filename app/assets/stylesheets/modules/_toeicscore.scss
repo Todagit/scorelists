@@ -96,17 +96,20 @@
     padding-right: 20px;
   }
 
-  &__body {
-    display: flex;
-    margin: 10px 30px;
-    
+  &__body__list {
+
+    &__title {
+      display: flex;
+      margin: 10px 30px;
+    }
+
+    &__score {
+      display: flex;
+      margin: 10px 30px;
+    }
   }
 
-  &__list{
-    display: flex;
-    margin: 10px 30px;
-    
-  }
+  
 
 
   
