@@ -96,17 +96,31 @@
     padding-right: 20px;
   }
 
-  &__body__list {
+  &__list {
 
-    &__title {
-      display: flex;
-      margin: 10px 30px;
+    display: flex;
+    text-align: center;
+
+    &__administration {
+      width: calc(100% / 5);
+    }
+    
+    &__testdate {
+      width: calc(100% / 5);
     }
 
-    &__score {
-      display: flex;
-      margin: 10px 30px;
+    &__listeniong {
+      width: calc(100% / 5);
     }
+
+    &__reading {
+      width: calc(100% / 5);
+    }
+
+    &__total {
+      width: calc(100% / 5);
+    }
+
   }
 
   
