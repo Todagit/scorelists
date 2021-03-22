@@ -89,7 +89,12 @@
 
 .index__toeicscore {
 
-  
+  &__title {
+    margin: 50px 0;
+    font-size: 24px;
+    color: $message;
+    text-align: center;
+  }
 
 
   &__list {
