@@ -104,23 +104,43 @@
 
     &__administration {
       width: calc(100% / 5);
+
+      &__title {
+        margin-bottom: 20px;
+      }
     }
     
     &__testdate {
       width: calc(100% / 5);
+
+      &__title {
+        margin-bottom: 20px;
+      }
     }
 
-    &__listeniong {
+    &__listening {
       width: calc(100% / 5);
+
+      &__title {
+        margin-bottom: 20px;
+      }
     }
 
     &__reading {
       width: calc(100% / 5);
+
+      &__title {
+        margin-bottom: 20px;
+      }
     }
 
     &__total {
       width: calc(100% / 5);
       color: $notice;
+
+      &__title {
+        margin-bottom: 20px;
+      }
     }
 
   }
