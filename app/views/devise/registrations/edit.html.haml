@@ -17,22 +17,22 @@
     .field
       = f.label :password
       %br/
-      %i (変更しない場合は空欄のままにしてください)
+      %p.field__message (変更しない場合は空欄のままにしてください)
       %br/
       = f.password_field :password, autocomplete: "new-password"
       - if @minimum_password_length
         %br/
-        %em
+        %em.field__message
           = @minimum_password_length
           文字以上にしてください
     .field
       = f.label :password_confirmation
       %br/
       = f.password_field :password_confirmation, autocomplete: "new-password"
-    .field__current_password
+    .field
       = f.label :current_password
       %br/
-      %i ニックネーム、eメールアドレス、パスワードを変更する場合は、この欄に現在のパスワードを入力してください
+      %p.field__message ニックネーム、eメールアドレス、パスワードを変更する場合は、この欄に現在のパスワードを入力してください
       %br/
       = f.password_field :current_password, autocomplete: "current-password"
     .actions
