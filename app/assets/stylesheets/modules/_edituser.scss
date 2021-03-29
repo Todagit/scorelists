@@ -14,12 +14,6 @@
     font-size: 24px;
   }
 
-  h3 {
-    padding: 50px 0;
-    font-weight: bold;
-    color: $message;
-    font-size: 16px;
-  }
 
   .field {
     justify-content: center;
@@ -50,6 +44,25 @@
       height: 50px;
       background-color: $notice;
       border: 1px solid $notice;
+      border-radius: 4px;
+      color: $white;
+      cursor: pointer;
+    }
+  }
+
+  &__delete {
+    color: $alert;
+  }
+
+  form.button_to {
+
+    margin-bottom: 20px;
+
+    input {
+      width: 328px;
+      height: 50px;
+      background-color: red;
+      border: 1px solid red;
       border-radius: 4px;
       color: $white;
       cursor: pointer;
