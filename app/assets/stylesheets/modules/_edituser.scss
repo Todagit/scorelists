@@ -50,6 +50,14 @@
     }
   }
 
+
+  h3 {
+    padding: 50px 0;
+    font-weight: bold;
+    color: $alert;
+    font-size: 16px;
+  }
+
   &__delete {
     color: $alert;
   }
