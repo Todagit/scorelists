@@ -172,13 +172,26 @@
 
   }
 
-  
+  .index__toeicscore__link-to-newscore {
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    &__btn {
+      @include btn();
+      background-color: $link;
+      border: 1px solid $link;
+    }
+  }
 
 
   
 
 
   .link-to-userpage{
+    margin: 30px 0;
     display: flex;
     align-items: center;
     flex-direction: column;
