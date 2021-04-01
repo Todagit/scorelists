@@ -28,11 +28,21 @@
     .field
       = f.label :password_confirmation
       %br/
+      %p.field__message
+        パスワードを変更する場合は確認のため
+        %br/
+      %p.field__message
+        もう一度新しいパスワードを入力してください
+      %br/
       = f.password_field :password_confirmation, autocomplete: "new-password"
     .field
       = f.label :current_password
       %br/
-      %p.field__message ニックネーム、eメールアドレス、パスワードを変更する場合は、この欄に現在のパスワードを入力してください
+      %p.field__message
+        ニックネーム、eメールアドレス、パスワードを変更する場合は
+        %br/
+      %p.field__message
+        この欄に現在のパスワードを入力してください
       %br/
       = f.password_field :current_password, autocomplete: "current-password"
     .actions
