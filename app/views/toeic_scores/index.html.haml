@@ -44,6 +44,15 @@
   .border
   // ボーダー
 
+  .index__toeicscore__link-to-newscore
+    = link_to new_toeic_score_path do
+      .index__toeicscore__link-to-newscore__btn
+        新しいTOEIC L&Rのスコアを登録する
+
+  // ボーダー
+  .border
+  // ボーダー
+
   .link-to-userpage
     = link_to "/users/#{current_user.id}" do
       .link-to-userpage__btn
