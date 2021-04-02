@@ -179,10 +179,11 @@
     flex-direction: column;
     text-align: center;
 
+    
     &__btn {
       @include btn();
-      background-color: $link;
-      border: 1px solid $link;
+      background-color: #7fffd4;
+      border: 1px solid #7fffd4;
     }
   }
 
