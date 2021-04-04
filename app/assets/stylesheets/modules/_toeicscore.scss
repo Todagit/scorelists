@@ -182,11 +182,11 @@
     &__message {
       color: $message;
     }
-    
+
     &__btn {
       @include btn();
-      background-color: #7fffd4;
-      border: 1px solid #7fffd4;
+      background-color: skyblue;
+      border: 1px solid skyblue;
     }
   }
 
