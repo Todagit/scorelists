@@ -1,6 +1,13 @@
 class StudyScoresController < ApplicationController
 
   def index
+    if user_signed_in?
+      @study_scores = StudyScore.all
+      # @study_scores = StudyScore.includes(:user)
+    else
+      flash[:alert] = 'スコアを閲覧するには、ログインするか新規会員登録をしてください。'
+      redirect_to root_path
+    end
   end
 
   def new
