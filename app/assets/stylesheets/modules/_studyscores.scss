@@ -2,4 +2,10 @@
   align-items: center;
   flex-direction: column;
   text-align: center;
+
+  &__title {
+    font-size: 24px;
+    font-weight: bold;
+    color: rebeccapurple;
+  }
 }
