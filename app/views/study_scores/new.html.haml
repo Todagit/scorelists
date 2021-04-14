@@ -2,7 +2,9 @@
 
 .new__studyscore
   .new__studyscore__title
-    %h2 共通テストの模試などの結果を登録できます
+    %h2 新規登録
+  .new__studyscore__message
+    共通テストの模試などの結果を登録できます
   .new__studyscore__form
     =form_with model: @study_score ,class:"new__studyscore__form__box",local: true do |f|
       .f__field
