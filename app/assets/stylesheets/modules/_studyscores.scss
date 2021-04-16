@@ -16,4 +16,11 @@
     font-weight: bold;
     color: $message;
   }
+
+  &__form {
+
+    .f__field {
+      margin: 20px 0;
+    }
+  }
 }
