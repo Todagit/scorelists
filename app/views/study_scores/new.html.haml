@@ -5,6 +5,8 @@
     %h2 共通テスト模試の結果を登録しよう！
   .new__studyscore__message
     共通テストの模試などの結果を登録できます
+    %br/
+    受験していない科目は空欄のままで登録してください
   .new__studyscore__form
     =form_with model: @study_score ,class:"new__studyscore__form__box",local: true do |f|
       .f__field
