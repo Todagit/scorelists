@@ -9,55 +9,55 @@
     受験していない科目は空欄のままで登録してください
   .new__studyscore__form
     =form_with model: @study_score ,class:"new__studyscore__form__box",local: true do |f|
-      .f__field
+      .f__studyscore__field
         = f.label :test_name, "テスト名"
         %br/
         = f.text_field :test_name, placeholder: "テストの名前を入力してください"
-      .f__field
+      .f__studyscore__field
         = f.label :test_date, "テストを実施した日付"
         %br/
         = f.date_select :test_date
-      .f__field
+      .f__studyscore__field
         = f.label :japanese, "国語"
         %br/
         = f.number_field :japanese
-      .f__field
+      .f__studyscore__field
         = f.label :math1a, "数Ia"
         %br/
         = f.number_field :math1a
-      .f__field
+      .f__studyscore__field
         = f.label :math2b, "数IIb"
         %br/
         = f.number_field :math2b
-      .f__field
+      .f__studyscore__field
         = f.label :worldhistory, "世界史"
         %br/
         = f.number_field :worldhistory
-      .f__field
+      .f__studyscore__field
         = f.label :japanesehistory, "日本史"
         %br/
         = f.number_field :japanesehistory
-      .f__field
+      .f__studyscore__field
         = f.label :modernsociety, "現代社会"
         %br/
         = f.number_field :modernsociety
-      .f__field
+      .f__studyscore__field
         = f.label :geography, "地理"
         %br/
         = f.number_field :geography
-      .f__field
+      .f__studyscore__field
         = f.label :chemistry, "化学"
         %br/
         = f.number_field :chemistry
-      .f__field
+      .f__studyscore__field
         = f.label :physics, "物理"
         %br/
         = f.number_field :physics
-      .f__field
+      .f__studyscore__field
         = f.label :english_l, "英語(リスニング)"
         %br/
         = f.number_field :english_l
-      .f__field
+      .f__studyscore__field
         = f.label :english_r, "英語(リーディング)"
         %br/
         = f.number_field :english_r 
