@@ -43,6 +43,15 @@
 
     }
 
+    .new__studyscore__total {
+
+      &__title {
+        font-size: 24px;
+        font-weight: bold;
+        color: palevioletred;
+      }
+    }
+
     .f__submit {
 
       margin: 20px;
