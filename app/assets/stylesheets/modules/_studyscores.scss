@@ -50,6 +50,12 @@
         font-weight: bold;
         color: palevioletred;
       }
+
+      &__score {
+        font-size: 24px;
+        font-weight: bold;
+        color: $notice;
+      }
     }
 
     .f__submit {
