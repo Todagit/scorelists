@@ -9,9 +9,11 @@ $(function(){
 
     let math1a_score = $( '.f__studyscore__field__math1a' ).val();
 
+    let math2b_score = $( '.f__studyscore__field__math2b' ).val();
+
     // ここに随時付け足す
     
-    let total_score = eval(japanese_score) + eval (math1a_score);
+    let total_score = eval(japanese_score) + eval (math1a_score) + eval(math2b_score);
 
     $('.new__studyscore__total__score').html(total_score);
 
