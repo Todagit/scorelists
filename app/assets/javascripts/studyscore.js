@@ -15,7 +15,10 @@ $(function(){
 
     // ここに随時付け足す
     
-    let total_score = eval(japanese_score) + eval (math1a_score) + eval(math2b_score) + eval(worldhistory);
+    let total_score = eval(japanese_score) 
+                    + eval (math1a_score) 
+                    + eval(math2b_score) 
+                    + eval(worldhistory);
 
     $('.new__studyscore__total__score').html(total_score);
 
