@@ -13,12 +13,18 @@ $(function(){
 
     let worldhistory = $( 'f__studyscore__field__worldhistory' ).val();
 
+    let japanesehistory = $( 'f__studyscore__field__japanesehistory' ).val();
+
+    let modernsociety = $( 'f__studyscore__field__modernsociety' ).val();
+
     // ここに随時付け足す
     
     let total_score = eval(japanese_score) 
                     + eval (math1a_score) 
                     + eval(math2b_score) 
-                    + eval(worldhistory);
+                    + eval(worldhistory)
+                    + eval(japanesehistory)
+                    + eval(modernsociety);
 
     $('.new__studyscore__total__score').html(total_score);
 
