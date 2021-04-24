@@ -5,26 +5,40 @@ $(function(){
 
     // 各教科の点数を動的に足し算して表示する
 
-    let japanese_score = $( '.f__studyscore__field__japanese' ).val();
+    const japanese_score = $( '.f__studyscore__field__japanese' ).val();
 
-    let math1a_score = $( '.f__studyscore__field__math1a' ).val();
+    const math1a_score = $( '.f__studyscore__field__math1a' ).val();
 
-    let math2b_score = $( '.f__studyscore__field__math2b' ).val();
+    const math2b_score = $( '.f__studyscore__field__math2b' ).val();
 
-    let worldhistory = $( 'f__studyscore__field__worldhistory' ).val();
+    const worldhistory = $( 'f__studyscore__field__worldhistory' ).val();
 
-    let japanesehistory = $( 'f__studyscore__field__japanesehistory' ).val();
+    const japanesehistory = $( 'f__studyscore__field__japanesehistory' ).val();
 
-    let modernsociety = $( 'f__studyscore__field__modernsociety' ).val();
+    const modernsociety = $( 'f__studyscore__field__modernsociety' ).val();
+
+    const geography = $( 'f__studyscore__field__geography' ).val();
+
+    const english_l = $( 'f__studyscore__field__english_l' ).val();
+
+    const english_r = $( 'f__studyscore__field__english_r' ).val();
+
+    // const other1 = $( 'f__studyscore__field__other1' ).val();
+
+    // const other2 = $( 'f__studyscore__field__other2' ).val();
+
 
     // ここに随時付け足す
     
-    let total_score = eval(japanese_score) 
+    const total_score = eval(japanese_score) 
                     + eval (math1a_score) 
                     + eval(math2b_score) 
                     + eval(worldhistory)
                     + eval(japanesehistory)
-                    + eval(modernsociety);
+                    + eval(modernsociety)
+                    + eval(geography)
+                    + eval(english_l)
+                    + eval(english_r);
 
     $('.new__studyscore__total__score').html(total_score);
 
