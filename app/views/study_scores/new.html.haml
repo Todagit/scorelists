@@ -20,7 +20,7 @@
       .f__studyscore__field
         = f.label :japanese, "国語"
         %br/
-        = f.number_field :japanese, class: "f__studyscore__field__japanese"
+        = f.number_field :japanese, min: 0, class: "f__studyscore__field__japanese"
       .f__studyscore__field
         = f.label :math1a, "数Ia"
         %br/
