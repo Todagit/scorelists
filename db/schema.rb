@@ -40,7 +40,7 @@ ActiveRecord::Schema.define(version: 2021_02_03_004539) do
     t.datetime "updated_at", null: false
     t.bigint "user_id", null: false
     t.string "test_name", null: false
-    t.date "test_date"
+    t.date "test_date", null: false
     t.integer "japanese"
     t.integer "math1a"
     t.integer "math2b"
