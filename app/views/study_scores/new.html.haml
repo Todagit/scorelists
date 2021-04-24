@@ -24,43 +24,43 @@
       .f__studyscore__field
         = f.label :math1a, "数Ia"
         %br/
-        = f.number_field :math1a, class: "f__studyscore__field__math1a"
+        = f.number_field :math1a, min: 0, class: "f__studyscore__field__math1a"
       .f__studyscore__field
         = f.label :math2b, "数IIb"
         %br/
-        = f.number_field :math2b, class: "f__studyscore__field__math2b"
+        = f.number_field :math2b, min: 0, class: "f__studyscore__field__math2b"
       .f__studyscore__field
         = f.label :worldhistory, "世界史"
         %br/
-        = f.number_field :worldhistory, class: "f__studyscore__field__worldhistory"
+        = f.number_field :worldhistory, min: 0, class: "f__studyscore__field__worldhistory"
       .f__studyscore__field
         = f.label :japanesehistory, "日本史"
         %br/
-        = f.number_field :japanesehistory, class: "f__studyscore__field__japanesehistory"
+        = f.number_field :japanesehistory, min: 0, class: "f__studyscore__field__japanesehistory"
       .f__studyscore__field
         = f.label :modernsociety, "現代社会"
         %br/
-        = f.number_field :modernsociety, class: "f__studyscore__field__modernsociety"
+        = f.number_field :modernsociety, min: 0, class: "f__studyscore__field__modernsociety"
       .f__studyscore__field
         = f.label :geography, "地理"
         %br/
-        = f.number_field :geography, class: "f__studyscore__field__geography"
+        = f.number_field :geography, min: 0, class: "f__studyscore__field__geography"
       .f__studyscore__field
         = f.label :chemistry, "化学"
         %br/
-        = f.number_field :chemistry, class: "f__studyscore__field__chemistry"
+        = f.number_field :chemistry, min: 0, class: "f__studyscore__field__chemistry"
       .f__studyscore__field
         = f.label :physics, "物理"
         %br/
-        = f.number_field :physics, class: "f__studyscore__field__physics"
+        = f.number_field :physics, min: 0, class: "f__studyscore__field__physics"
       .f__studyscore__field
         = f.label :english_l, "英語(リスニング)"
         %br/
-        = f.number_field :english_l, class: "f__studyscore__field__english_l"
+        = f.number_field :english_l, min: 0, class: "f__studyscore__field__english_l"
       .f__studyscore__field
         = f.label :english_r, "英語(リーディング)"
         %br/
-        = f.number_field :english_r, class: "f__studyscore__field__english_r"
+        = f.number_field :english_r, min: 0, class: "f__studyscore__field__english_r"
       .new__studyscore__total
         .new__studyscore__total__title
           合計点
