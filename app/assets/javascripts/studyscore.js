@@ -5,11 +5,11 @@ $(function(){
 
     // 各教科の点数を動的に足し算して表示する
 
-    const japanese_score = $( '.f__studyscore__field__japanese' ).val();
+    const japanese = $( '.f__studyscore__field__japanese' ).val();
 
-    const math1a_score = $( '.f__studyscore__field__math1a' ).val();
+    const math1a = $( '.f__studyscore__field__math1a' ).val();
 
-    const math2b_score = $( '.f__studyscore__field__math2b' ).val();
+    const math2b = $( '.f__studyscore__field__math2b' ).val();
 
     const worldhistory = $( 'f__studyscore__field__worldhistory' ).val();
 
@@ -34,9 +34,9 @@ $(function(){
 
     // ここに随時付け足す
     
-    const total_score = eval(japanese_score) 
-                        + eval (math1a_score) 
-                        + eval(math2b_score) 
+    const total_score = eval(japanese) 
+                        + eval (math1a) 
+                        + eval(math2b) 
                         + eval(worldhistory)
                         + eval(japanesehistory)
                         + eval(modernsociety)
