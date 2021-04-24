@@ -5,36 +5,36 @@ $(function(){
 
     // 各教科の点数を動的に足し算して表示する
 
-    const japanese = $( '.f__studyscore__field__japanese' ).val();
+    let japanese = $( '.f__studyscore__field__japanese' ).val();
 
-    const math1a = $( '.f__studyscore__field__math1a' ).val();
+    let math1a = $( '.f__studyscore__field__math1a' ).val();
 
-    const math2b = $( '.f__studyscore__field__math2b' ).val();
+    let math2b = $( '.f__studyscore__field__math2b' ).val();
 
-    const worldhistory = $( 'f__studyscore__field__worldhistory' ).val();
+    let worldhistory = $( 'f__studyscore__field__worldhistory' ).val();
 
-    const japanesehistory = $( 'f__studyscore__field__japanesehistory' ).val();
+    let japanesehistory = $( 'f__studyscore__field__japanesehistory' ).val();
 
-    const modernsociety = $( 'f__studyscore__field__modernsociety' ).val();
+    let modernsociety = $( 'f__studyscore__field__modernsociety' ).val();
 
-    const geography = $( 'f__studyscore__field__geography' ).val();
+    let geography = $( 'f__studyscore__field__geography' ).val();
 
-    const chemistry = $( 'f__studyscore__field__chemistry' ).val();
+    let chemistry = $( 'f__studyscore__field__chemistry' ).val();
 
-    const physics = $( 'f__studyscore__field__physics' ).val();
+    let physics = $( 'f__studyscore__field__physics' ).val();
 
-    const english_l = $( 'f__studyscore__field__english_l' ).val();
+    let english_l = $( 'f__studyscore__field__english_l' ).val();
 
-    const english_r = $( 'f__studyscore__field__english_r' ).val();
+    let english_r = $( 'f__studyscore__field__english_r' ).val();
 
-    // const other1 = $( 'f__studyscore__field__other1' ).val();
+    // let other1 = $( 'f__studyscore__field__other1' ).val();
 
-    // const other2 = $( 'f__studyscore__field__other2' ).val();
+    // let other2 = $( 'f__studyscore__field__other2' ).val();
 
 
     // ここに随時付け足す
     
-    const total_score = eval(japanese) 
+    let total_score = eval(japanese) 
                         + eval (math1a) 
                         + eval(math2b) 
                         + eval(worldhistory)
