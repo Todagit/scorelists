@@ -39,7 +39,12 @@
         .index__toeicscore__list__total__score
           = toeic_score.total_score
 
-
+    - if user_signed_in? && current_user.id == @toeic_scores.user_id
+      %li
+        = link_to '編集', "/toeic_scores/#{toeic_score.id}/edit", method: :get
+      %li
+        = link_to '削除', "/toeic_scores/#{toeic_score.id}", method: :delete
+        
   // ボーダー
   .border
   // ボーダー
