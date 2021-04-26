@@ -60,6 +60,8 @@ class ToeicScoresController < ApplicationController
   end
 
   def show
+    @comment = Comment.new
+    @comments = @toeic_score.comments.includes(:user)
   end
 
 
