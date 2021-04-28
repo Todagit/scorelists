@@ -92,21 +92,20 @@
     
     &__studyscore__link {
       margin: 25px;
-      width: 328px;
-      height: 50px;
-      padding-top: 12px;
+      @include btn();
       background-color: slateblue;
       border: 1px solid slateblue;
-      border-radius: 4px;
       cursor: pointer;
       text-align: center;
+      &:hover {
+        border-color: lighten(slateblue, 15%);
+        color: lighten(slateblue, 15%);
+      }
     }
 
     &__toeicscore__link {
       margin: 25px;
-      width: 328px;
-      height: 50px;
-      padding-top: 12px;
+      
       background-color: skyblue;
       border: 1px solid skyblue;
       border-radius: 4px;
