@@ -188,7 +188,10 @@
       @include btn();
       background-color: skyblue;
       border: 1px solid skyblue;
-
+      &:hover {
+        border-color: lighten(skyblue, 15%);
+        color: lighten(skyblue, 15%);
+      }
     }
   }
 
@@ -206,6 +209,7 @@
       @include btn();
       background-color: $link;
       border: 1px solid $link;
+      
     }
   }
 
