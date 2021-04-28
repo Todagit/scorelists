@@ -5,6 +5,10 @@
   padding-top: 12px;
   border-radius: 4px;
   color: $white;
+  // &:hover {
+  //   border-color: lighten($accent, 15%);
+  //   color: lighten($accent, 15%);
+  // }
   // background-color: ここは別で(mixin外で)好きな色を当てる;
   // border: 1px solid ここは別で(mixin外で)好きな色を当てる;
 }
