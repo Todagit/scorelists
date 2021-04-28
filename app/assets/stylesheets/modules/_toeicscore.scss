@@ -64,10 +64,10 @@
         background-color: $link;
         border: 1px solid $link;
         cursor: pointer;
-  //       &:hover {
-  //   border-color: lighten(ここは別で(mixin外で)好きな色を当てる, 15%);
-  //   color: lighten(ここは別で(mixin外で)好きな色を当てる, 15%);
-  // }
+        &:hover {
+          border-color: lighten($link, 15%);
+          color: lighten($link, 15%);
+        }
       }
 
       &__errormessage {
