@@ -209,7 +209,10 @@
       @include btn();
       background-color: $link;
       border: 1px solid $link;
-      
+      &:hover {
+        border-color: lighten($link, 15%);
+        color: lighten($link, 15%);
+      }
     }
   }
 
