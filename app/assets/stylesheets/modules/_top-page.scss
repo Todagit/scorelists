@@ -99,7 +99,7 @@
       text-align: center;
       &:hover {
         border-color: lighten(slateblue, 15%);
-        color: lighten(slateblue, 15%);
+        background-color: lighten(slateblue, 15%);
       }
     }
 
@@ -112,7 +112,7 @@
       text-align: center;
       &:hover {
         border-color: lighten(skyblue, 15%);
-        color: lighten(skyblue, 15%);
+        background-color: lighten(skyblue, 15%);
       }
     }
 
@@ -131,7 +131,7 @@
       text-align: center;
       &:hover {
         border-color: lighten($notice, 15%);
-        color: lighten($notice, 15%);
+        background-color: lighten($notice, 15%);
       }
     }
     
