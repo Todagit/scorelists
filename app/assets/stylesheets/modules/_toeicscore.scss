@@ -60,17 +60,11 @@
       margin: 20px;
 
       &__btn {
-        // @include btn();
-        width: 328px;
-        height: 50px;
-        margin: 10px 0;
-        // padding-top: 12px;
-        border-radius: 4px;
-        color: $white;
-        text-align: center;
+        @include btn();
         background-color: $link;
         border: 1px solid $link;
         cursor: pointer;
+        padding-top: 12px;
         &:hover {
           border-color: lighten($link, 15%);
           background-color: lighten($link, 15%);
