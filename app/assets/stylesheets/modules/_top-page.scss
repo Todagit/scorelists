@@ -97,6 +97,7 @@
       border: 1px solid slateblue;
       cursor: pointer;
       text-align: center;
+      padding-top: 12px;
       &:hover {
         border-color: lighten(slateblue, 15%);
         background-color: lighten(slateblue, 15%);
@@ -110,6 +111,7 @@
       border: 1px solid skyblue;
       cursor: pointer;
       text-align: center;
+      padding-top: 12px;
       &:hover {
         border-color: lighten(skyblue, 15%);
         background-color: lighten(skyblue, 15%);
@@ -129,6 +131,7 @@
       border: 1px solid $notice;
       cursor: pointer;
       text-align: center;
+      padding-top: 12px;
       &:hover {
         border-color: lighten($notice, 15%);
         background-color: lighten($notice, 15%);
