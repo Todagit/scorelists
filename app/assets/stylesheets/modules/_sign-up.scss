@@ -107,7 +107,7 @@ a {
     border: 1px solid $link;
     cursor: pointer;
     &:hover {
-        border-color: lighten($link 15%);
+        border-color: lighten($link, 15%);
         background-color: lighten($link, 15%);
       }
   }
