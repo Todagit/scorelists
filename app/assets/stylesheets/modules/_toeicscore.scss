@@ -189,6 +189,7 @@
       @include btn();
       background-color: skyblue;
       border: 1px solid skyblue;
+      padding-top: 12px;
       &:hover {
         border-color: lighten(skyblue, 15%);
         background-color: lighten(skyblue, 15%);
@@ -210,6 +211,7 @@
       @include btn();
       background-color: $link;
       border: 1px solid $link;
+      padding-top: 12px;
       &:hover {
         border-color: lighten($link, 15%);
         background-color: lighten($link, 15%);
