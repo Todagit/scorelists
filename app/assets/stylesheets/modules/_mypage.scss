@@ -54,9 +54,8 @@
     }
 
     &__btn {
-      
       @include btn();
-      
+      padding-top: 12px;
       background-color: $notice;
       border: 1px solid $notice;
     }
