@@ -54,8 +54,9 @@
     }
 
     &__btn {
-      text-align: center;
+      
       @include btn();
+      
       background-color: $notice;
       border: 1px solid $notice;
     }
