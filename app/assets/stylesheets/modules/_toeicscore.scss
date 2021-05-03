@@ -64,7 +64,6 @@
         background-color: $link;
         border: 1px solid $link;
         cursor: pointer;
-        padding-top: 12px;
         &:hover {
           border-color: lighten($link, 15%);
           background-color: lighten($link, 15%);
