@@ -13,7 +13,7 @@
         %br/
         = f.date_select :test_date
       .f__field
-        = f.label :administration_number, "受験したテストの開催回"
+        = f.label :administration_number, min: 1, "受験したテストの開催回"
         %br/
         %p Administration Number
         %br/
