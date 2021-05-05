@@ -35,13 +35,13 @@
         = f.submit "登録する", class: "f__submit__btn", disabled: true
       .f__submit__errormessage
         // ここに入力されたフォームの数値が5の倍数じゃなかった場合のエラーメッセージを表示
-  // ボーダー
-  .border
-  // ボーダー
-  .new__toeicscore__back_to_index
-    = link_to toeic_scores_path do
-      .new__toeicscore__back_to_index__btn
-        TOEIC L&R のスコア一覧にもどる
+// ボーダー
+.border
+// ボーダー
+.back_to_index
+  = link_to toeic_scores_path do
+    .back_to_index__btn
+      TOEIC L&R のスコア一覧にもどる
   
 // ボーダー
 .border
