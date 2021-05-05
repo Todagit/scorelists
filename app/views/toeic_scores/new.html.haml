@@ -13,19 +13,19 @@
         %br/
         = f.date_select :test_date
       .f__field
-        = f.label :administration_number, min: 1, "受験したテストの開催回"
+        = f.label :administration_number, "受験したテストの開催回"
         %br/
         %p Administration Number
         %br/
-        = f.number_field :administration_number
+        = f.number_field :administration_number, min: 1
       .f__field
         = f.label :listening_score, "Listening"
         %br/
-        = f.number_field :listening_score, class: "f__field__score__listening_score"
+        = f.number_field :listening_score, min: 0, class: "f__field__score__listening_score"
       .f__field
         = f.label :reading_score, "Reading"
         %br/
-        = f.number_field :reading_score, class: "f__field__score__reading_score"
+        = f.number_field :reading_score, min: 0, class: "f__field__score__reading_score"
       .new__toeicscore__total
         .new__toeicscore__total__title
           TOTAL SCORE
