@@ -76,22 +76,22 @@
     }
   }
 
-  &__back_to_index {
-    margin: 20px 0;
+}
 
-    &__btn {
-      @include btn();
-      background-color: $alert;
-      border: 1px solid $alert;
-      padding-top: 12px;
-      cursor: pointer;
-      &:hover {
-        border-color: lighten($alert, 15%);
-        background-color: lighten($alert, 15%);
-      }
+.back_to_index {
+  margin: 20px 0;
+
+  &__btn {
+    @include btn();
+    background-color: $alert;
+    border: 1px solid $alert;
+    padding-top: 12px;
+    cursor: pointer;
+    &:hover {
+      border-color: lighten($alert, 15%);
+      background-color: lighten($alert, 15%);
     }
   }
-
 }
 
 .create__toeicscore {
