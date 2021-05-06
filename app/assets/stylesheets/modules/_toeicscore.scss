@@ -85,13 +85,13 @@
 
   &__btn {
     @include btn();
-    background-color: $alert;
-    border: 1px solid $alert;
+    background-color: #f4b3c2;
+    border: 1px solid #f4b3c2;
     padding-top: 12px;
     cursor: pointer;
     &:hover {
-      border-color: lighten($alert, 15%);
-      background-color: lighten($alert, 15%);
+      border-color: lighten(#f4b3c2, 5%);
+      background-color: lighten(#f4b3c2, 5%);
     }
   }
 }
