@@ -35,7 +35,7 @@ $(function(){
     // ここに随時付け足す
     
     let total_score = eval(japanese) 
-                        + eval (math1a) 
+                        + eval(math1a) 
                         + eval(math2b) 
                         + eval(worldhistory)
                         + eval(japanesehistory)
