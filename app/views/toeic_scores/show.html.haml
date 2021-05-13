@@ -6,6 +6,14 @@
       各スコアの編集、削除、またスコアに対するコメントができます
     .show__toeicscore__inner__main
       
+      -# %ul.show__toeicscore__inner__main__list
+      -# %li
+      -#   = link_to '詳細', "/toeic_scores/#{toeic_score.id}", method: :get
+      -# - if user_signed_in? && current_user.id == toeic_score.user_id
+      -#   %li
+      -#     = link_to '編集', "/toeic_scores/#{toeic_score.id}/edit", method: :get
+      -#   %li
+      -#     = link_to '削除', "/toeic_scores/#{toeic_score.id}", method: :delete
 
 
 
