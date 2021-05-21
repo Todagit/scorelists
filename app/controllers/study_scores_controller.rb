@@ -29,8 +29,11 @@ class StudyScoresController < ApplicationController
   end
 
   def update
+    study_score = StudyScore.find(params[:id])
+    study_score.update
   end
-  
+
+
   
 
   private
