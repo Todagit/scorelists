@@ -33,6 +33,9 @@ class StudyScoresController < ApplicationController
     study_score.update
   end
 
+  def destroy
+  end
+  
 
   
 
