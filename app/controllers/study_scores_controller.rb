@@ -34,8 +34,17 @@ class StudyScoresController < ApplicationController
   end
 
   def destroy
+    study_score = StudyScore.find(params[:id])
+    study_score.destroy
+
+    # if study_score.destroy
+    #   redirect_to root_path
+    # else
+    #   render :show
+    # end
+
   end
-  
+
 
   
 
