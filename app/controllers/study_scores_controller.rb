@@ -38,7 +38,7 @@ class StudyScoresController < ApplicationController
     study_score.destroy
 
     if study_score.destroy
-      redirect_to root_path
+      redirect_to user_path
     else
       render :show
     end
