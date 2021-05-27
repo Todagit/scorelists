@@ -31,6 +31,12 @@ class StudyScoresController < ApplicationController
   def update
     study_score = StudyScore.find(params[:id])
     study_score.update
+
+    if study_score.destroy
+      redirect_to study_score_path
+    else
+      render :show
+    end
   end
 
   def destroy
