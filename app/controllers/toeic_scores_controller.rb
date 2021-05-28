@@ -48,7 +48,7 @@ class ToeicScoresController < ApplicationController
     toeic_score = ToeicScore.find(params[:id])
     toeic_score.update
     
-    if @toeic_score.update
+    if toeic_score.update
       redirect_to "/users/#{current_user.id}"
     else
       render :show
