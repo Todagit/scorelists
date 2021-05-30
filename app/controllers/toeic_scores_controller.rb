@@ -49,7 +49,8 @@ class ToeicScoresController < ApplicationController
     toeic_score.update
     
     if toeic_score.update
-      redirect_to "/users/#{current_user.id}"
+      redirect_to toeic_scores_path
+      # redirect_to "/users/#{current_user.id}"
     else
       render :show
     end 
@@ -60,6 +61,7 @@ class ToeicScoresController < ApplicationController
     toeic_score.destroy
     
     if toeic_score.destroy
+      # redirect_to toeic_scores_path
       redirect_to "/users/#{current_user.id}"
     else
       render :show
