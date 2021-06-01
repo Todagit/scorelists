@@ -32,7 +32,6 @@ class ToeicScoresController < ApplicationController
       @toeic_score.save
       flash[:notice] = 'スコアを登録しました'
       redirect_to toeic_scores_path
-      # redirect_to "/users/#{current_user.id}"
     else
       flash.now[:alert] = '必須項目を入力するか正しいスコアを登録してください'
       @toeic_score = ToeicScore.new(toeic_score_params)
@@ -50,7 +49,6 @@ class ToeicScoresController < ApplicationController
     
     if toeic_score.update
       redirect_to toeic_scores_path
-      # redirect_to "/users/#{current_user.id}"
     else
       render :show
     end 
@@ -62,7 +60,6 @@ class ToeicScoresController < ApplicationController
     
     if toeic_score.destroy
       redirect_to toeic_scores_path
-      # redirect_to "/users/#{current_user.id}"
     else
       render :show
     end 
