@@ -50,6 +50,7 @@ class ToeicScoresController < ApplicationController
     if toeic_score.update
       redirect_to toeic_scores_path
     else
+      flash.now[:alert] = '必須項目を入力するか正しいスコアを登録してください'
       render :show
     end 
   end
