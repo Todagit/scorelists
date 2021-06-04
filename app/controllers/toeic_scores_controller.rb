@@ -62,6 +62,7 @@ class ToeicScoresController < ApplicationController
     if toeic_score.destroy
       redirect_to toeic_scores_path
     else
+      flash.now[:alert] = '正しく削除できませんでした'
       render :show
     end 
   end
