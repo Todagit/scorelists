@@ -61,6 +61,7 @@ class ToeicScoresController < ApplicationController
     toeic_score.destroy
     
     if toeic_score.destroy
+      flash[:notice] = 'スコアを削除しました'
       redirect_to toeic_scores_path
     else
       flash.now[:alert] = '正しく削除できませんでした'
