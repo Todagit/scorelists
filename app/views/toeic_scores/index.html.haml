@@ -10,7 +10,7 @@
       -# - @toeic_scores.each do |toeic_score|
       -#   .index__toeicscore__list__administration__number
       -#     = toeic_score.administration_number
-      = render partial: "score", locals: { toeic_score: toeic_score }
+      = render partial: "score", locals: { toeic_score: @toeic_score }
 
     .index__toeicscore__list__testdate
       .index__toeicscore__list__testdate__title
