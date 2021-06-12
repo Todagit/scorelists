@@ -15,9 +15,10 @@
     .index__toeicscore__list__testdate
       .index__toeicscore__list__testdate__title
         テストの開催日
-      - @toeic_scores.each do |toeic_score|
-        .index__toeicscore__list__testdate__date
-          = toeic_score.test_date
+      = render partial: "testdate", locals: { toeic_score: @toeic_score }
+      -# - @toeic_scores.each do |toeic_score|
+      -#   .index__toeicscore__list__testdate__date
+      -#     = toeic_score.test_date
     
     .index__toeicscore__list__listening
       .index__toeicscore__list__listening__title
