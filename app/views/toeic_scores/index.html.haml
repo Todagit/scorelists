@@ -23,9 +23,10 @@
     .index__toeicscore__list__listening
       .index__toeicscore__list__listening__title
         リスニング
-      - @toeic_scores.each do |toeic_score|
-        .index__toeicscore__list__listening__score
-          = toeic_score.listening_score
+      = render partial: "listening_score", locals: { toeic_score: @toeic_score }
+      -# - @toeic_scores.each do |toeic_score|
+      -#   .index__toeicscore__list__listening__score
+      -#     = toeic_score.listening_score
     
     .index__toeicscore__list__reading
       .index__toeicscore__list__reading__title
