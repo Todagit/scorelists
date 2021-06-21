@@ -189,6 +189,20 @@
       }
     }
 
+    &__option {
+      width: calc(100% / 6);
+      color: $notice;
+
+      &__title {
+        margin-bottom: 20px;
+        font-size: 24px;
+      }
+
+      &__operation {
+        margin-bottom: 10px;
+      }
+    }
+
   }
 
   .index__toeicscore__link-to-newscore {
