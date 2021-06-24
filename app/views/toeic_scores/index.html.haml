@@ -31,9 +31,10 @@
     .index__toeicscore__list__reading
       .index__toeicscore__list__reading__title
         リーディング
-      - @toeic_scores.each do |toeic_score|
-        .index__toeicscore__list__reading__score
-          = toeic_score.reading_score
+      = render partial: "reading_score", locals: { toeic_score: @toeic_score }
+      -# - @toeic_scores.each do |toeic_score|
+      -#   .index__toeicscore__list__reading__score
+      -#     = toeic_score.reading_score
     
     .index__toeicscore__list__total
       .index__toeicscore__list__total__title
