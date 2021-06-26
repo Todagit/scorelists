@@ -23,7 +23,7 @@
     .index__toeicscore__list__listening
       .index__toeicscore__list__listening__title
         リスニング
-      = render partial: "listening_score", locals: { toeic_score: @toeic_score }
+      = render partial: "listeningscore", locals: { toeic_score: @toeic_score }
       -# - @toeic_scores.each do |toeic_score|
       -#   .index__toeicscore__list__listening__score
       -#     = toeic_score.listening_score
@@ -31,7 +31,7 @@
     .index__toeicscore__list__reading
       .index__toeicscore__list__reading__title
         リーディング
-      = render partial: "reading_score", locals: { toeic_score: @toeic_score }
+      = render partial: "readingscore", locals: { toeic_score: @toeic_score }
       -# - @toeic_scores.each do |toeic_score|
       -#   .index__toeicscore__list__reading__score
       -#     = toeic_score.reading_score
