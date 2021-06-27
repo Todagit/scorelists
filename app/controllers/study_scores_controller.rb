@@ -33,7 +33,7 @@ class StudyScoresController < ApplicationController
     study_score.update
 
     if study_score.update
-      flash[:notice] = 'スコアを修正・更新しました'
+      # flash[:notice] = 'スコアを修正・更新しました'
       redirect_to study_score_path
     else
       render :show
