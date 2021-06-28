@@ -36,6 +36,7 @@ class StudyScoresController < ApplicationController
       flash[:notice] = '模試の結果、スコアを修正・更新しました'
       redirect_to study_score_path
     else
+      flash.now[:alert] = '必須項目を入力するか正しいスコアを登録してください'
       render :show
     end
   end
