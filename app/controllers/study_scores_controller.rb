@@ -46,7 +46,9 @@ class StudyScoresController < ApplicationController
     study_score.destroy
 
     if study_score.destroy
-      redirect_to user_path
+      flash[:notice] = '模試の結果、スコアを削除しました'
+      redirect_to study_scores_path
+      # redirect_to user_path
     else
       render :show
     end
