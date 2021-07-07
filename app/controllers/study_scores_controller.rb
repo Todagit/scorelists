@@ -50,6 +50,7 @@ class StudyScoresController < ApplicationController
       redirect_to study_scores_path
       # redirect_to user_path
     else
+      flash.now[:alert] = '正しく削除できませんでした'
       render :show
     end
 
