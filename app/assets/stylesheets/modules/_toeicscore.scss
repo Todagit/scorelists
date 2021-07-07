@@ -123,7 +123,7 @@
     margin-bottom: 50px;
 
     &__administration {
-      width: calc(100% / 6);
+      width: calc(100% / 5);
       color: $message;
 
       &__title {
@@ -137,7 +137,7 @@
     }
     
     &__testdate {
-      width: calc(100% / 6);
+      width: calc(100% / 5);
 
       &__title {
         margin-bottom: 20px;
@@ -150,7 +150,7 @@
     }
 
     &__listening {
-      width: calc(100% / 6);
+      width: calc(100% / 5);
 
       &__title {
         margin-bottom: 20px;
@@ -163,7 +163,7 @@
     }
 
     &__reading {
-      width: calc(100% / 6);
+      width: calc(100% / 5);
 
       &__title {
         margin-bottom: 20px;
@@ -176,7 +176,7 @@
     }
 
     &__total {
-      width: calc(100% / 6);
+      width: calc(100% / 5);
       color: $notice;
 
       &__title {
@@ -189,19 +189,19 @@
       }
     }
 
-    &__option {
-      width: calc(100% / 6);
-      color: $notice;
+    // &__option {
+    //   width: calc(100% / 6);
+    //   color: $notice;
 
-      &__title {
-        margin-bottom: 20px;
-        font-size: 24px;
-      }
+    //   &__title {
+    //     margin-bottom: 20px;
+    //     font-size: 24px;
+    //   }
 
-      &__operation {
-        margin-bottom: 10px;
-      }
-    }
+    //   &__operation {
+    //     margin-bottom: 10px;
+    //   }
+    // }
 
   }
 
